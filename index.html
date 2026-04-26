@@ -3,113 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sunima Das | Data Analyst — Power BI, SQL, Data Storytelling" />
   <title>Sunima Das — Data Analyst Portfolio</title>
-  <meta name="description" content="Sunima Das | Data Analyst specializing in Power BI, SQL, and data storytelling." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ═══ NAV ═══ -->
   <nav>
-    <div class="nav-logo">Sunima.</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
-    </ul>
-    <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
-      <span></span><span></span><span></span>
+    <div class="nav-inner">
+      <div class="nav-logo">Sunima.</div>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- Mobile nav drawer -->
+  <nav id="nav-drawer" class="nav-drawer">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#contact" class="nd-hire">Hire Me ↗</a>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
   <section id="hero">
-    <div class="hero-grid-bg"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-glow2"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Available for Opportunities</div>
-      <h1 class="hero-name" id="hero-name">Sunima Das</h1>
-      <p class="hero-role" id="hero-tagline">Data Analyst · Power BI · SQL · Insights</p>
-      <p class="hero-desc" id="hero-desc"></p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View Projects ↓</a>
-        <a href="#contact" class="btn-secondary">Get in Touch</a>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="container">
+      <div class="hero-inner">
+
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for Opportunities
+        </div>
+
+        <h1 class="hero-name" id="hero-name">Sunima Das</h1>
+
+        <p class="hero-sub" id="hero-tagline"></p>
+
+        <div class="hero-pills">
+          <span class="pill pill-v">Power BI</span>
+          <span class="pill pill-p">SQL</span>
+          <span class="pill pill-c">ETL</span>
+          <span class="pill pill-a">DAX</span>
+          <span class="pill pill-g">Data Storytelling</span>
+        </div>
+
+        <p class="hero-sub" id="hero-desc" style="font-size:.92rem;opacity:.75"></p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-v">View Projects ↓</a>
+          <a href="#contact"  class="btn btn-o">Get in Touch</a>
+        </div>
+
+        <div class="hero-stats" id="hero-stats"></div>
+
       </div>
-      <div class="hero-stats" id="hero-stats"></div>
     </div>
   </section>
 
-  <hr class="section-divider" />
-
-  <!-- ABOUT -->
-  <section id="about">
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section section-alt">
     <div class="container">
       <div class="about-grid">
-        <div class="about-text reveal">
-          <p class="section-label">About Me</p>
-          <h2 class="section-title">Turning Data<br>Into Decisions</h2>
-          <div id="about-text"></div>
-          <div class="contact-chips" id="contact-chips"></div>
+
+        <div class="reveal">
+          <div class="sec-eyebrow">About Me</div>
+          <h2 class="sec-title">Turning Data<br>Into Decisions</h2>
+          <div class="about-body" id="about-body"></div>
+          <div class="contact-row" id="contact-chips"></div>
         </div>
-        <div class="about-visual" id="skills-list"></div>
+
+        <div class="skills-stack" id="skills-list"></div>
+
       </div>
     </div>
   </section>
 
-  <hr class="section-divider" />
-
-  <!-- PROJECTS -->
-  <section id="projects">
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" class="section">
     <div class="container">
-      <p class="section-label reveal">Projects</p>
-      <h2 class="section-title reveal">Work That Speaks<br>For Itself</h2>
-      <p class="section-sub reveal">Real-world data problems solved with SQL, Power BI, and analytical thinking.</p>
+      <div class="reveal">
+        <div class="sec-eyebrow">Projects</div>
+        <h2 class="sec-title">Work That Speaks<br>For Itself</h2>
+        <p class="sec-sub">Real-world analytics problems solved with SQL, Power BI, and strategic thinking.</p>
+      </div>
       <div class="projects-grid" id="projects-grid"></div>
     </div>
   </section>
 
-  <hr class="section-divider" />
-
-  <!-- CERTIFICATIONS -->
-  <section id="certifications">
+  <!-- ═══ CERTIFICATIONS ═══ -->
+  <section id="certifications" class="section section-alt">
     <div class="container">
-      <p class="section-label reveal">Certifications & Training</p>
-      <h2 class="section-title reveal">Credentials &<br>Experience</h2>
-      <p class="section-sub reveal">Industry-recognised programs and hands-on virtual internships from global leaders.</p>
+      <div class="reveal">
+        <div class="sec-eyebrow">Credentials</div>
+        <h2 class="sec-title">Certifications &amp;<br>Experience</h2>
+        <p class="sec-sub">Industry-recognised programs and hands-on virtual internships from global leaders.</p>
+      </div>
       <div class="certs-grid" id="certs-grid"></div>
     </div>
   </section>
 
-  <hr class="section-divider" />
-
-  <!-- EDUCATION -->
-  <section id="education">
+  <!-- ═══ EDUCATION ═══ -->
+  <section id="education" class="section">
     <div class="container">
-      <p class="section-label reveal">Education</p>
-      <h2 class="section-title reveal">Academic<br>Background</h2>
-      <p class="section-sub reveal">A scientific foundation that informs analytical thinking and problem-solving.</p>
-      <div id="education-wrap"></div>
+      <div class="reveal">
+        <div class="sec-eyebrow">Education</div>
+        <h2 class="sec-title">Academic<br>Background</h2>
+        <p class="sec-sub">A scientific foundation that sharpens analytical thinking and structured problem-solving.</p>
+      </div>
+      <div id="edu-wrap"></div>
     </div>
   </section>
 
-  <hr class="section-divider" />
-
-  <!-- CONTACT CTA -->
+  <!-- ═══ CONTACT CTA ═══ -->
   <section id="contact">
     <div class="container">
-      <p class="section-label reveal">Let's Connect</p>
-      <h2 class="section-title reveal">Open to Data Analyst<br>Opportunities</h2>
-      <p class="reveal">I'm actively looking for data analyst roles where I can apply my Power BI, SQL, and ETL skills. If you have an exciting opportunity or just want to chat, I'd love to hear from you.</p>
-      <div class="contact-links reveal" id="contact-links"></div>
+      <div class="sec-eyebrow">Let's Connect</div>
+      <h2 class="sec-title">Open to Data Analyst<br>Opportunities</h2>
+      <p>I'm actively looking for data analyst roles where I can apply my Power BI, SQL, and ETL skills to drive real business impact. If you have an exciting opportunity, let's talk!</p>
+      <div class="cta-btns" id="cta-btns"></div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Sunima Das · Built with purpose · Data Analyst Portfolio</p>
+    <p>© 2025 Sunima Das · Data Analyst Portfolio · Hyderabad, India</p>
   </footer>
+
+  <!-- Error fallback -->
+  <div id="app-error" style="display:none;padding:2rem;color:#ff4fa0;font-weight:600;text-align:center">
+    ⚠️ Could not load <code>data.json</code>. Make sure all four files are in the same folder and open via a local server or browser.
+  </div>
 
   <script src="script.js"></script>
 </body>
